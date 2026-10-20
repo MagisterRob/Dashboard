@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Space Express Travel </title>
+    <link rel="stylesheet" href="SpaceExpresIndex.css">
+    <!--google font Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="nav_search">  <!--firts section contaning the loggo, nav bar and searchbar-->
+        <a href="SpaceExpres.html">     <!--link back to home page-->
+            <div class="loggo"   >    <!-- loggo -->
+                <img src="bildOtextLoggavit.png" alt="loggan med text" width="115%" height="80px" >
+            </div>
+        </a>
+        <div class="navBar">  <!-- navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="#"> Last minute</a></li>
+                    <li><a href="#" style="background-color: #3b4956; border-radius: 50px; height: 10px; padding-top: 10px; margin-top: 10px; "> Destnation </a></li> <!-- hård kodade desingen för destination button så det inte skulle påvärka andra siadn-->
+                    <li><a href="#"> Hotels </a></li>
+                    <li><a href="#"> More </a></li>
+                    <li><a href="#"> Deals </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="searchBar">
+            <img src="search.png" alt="magnifyingglass for search" width="30px"  height="30px "> <!--img of the magnifying glass-->
+            <input type="text" placeholder="Search"> <!-- search bar -->
+        </div>
+    </section>
+
+    <section id="destination_page">     <!--general section for travle and neptune -->
+        <section id="travel">           <!--smaler section for the diffrent inputs-->
+            <div class="inputs">        <!-- same input for all of them-->
+                <p> FROM &nbsp;> </p>
+                <input type="text" placeholder="Stockholm">
+            </div>
+            <div class="inputs">
+                <p> TO &nbsp; > </p>
+                <input type="text" placeholder="Saturn">
+            </div>
+            <div class="inputs">
+                <p> WHEN &nbsp;> </p>
+                <input type="text" 
+                placeholder="02-03-2024"
+                onfocus="(this.type='date')"       
+                onblur="(this.type='text')">    <!-- found onfocus and onblur from website geeks for geeks-->
+            </div>
+            <div class="inputs">
+                <p> HOW LONG &nbsp;> </p>
+                <input type="datetime" placeholder="6-9 days">
+            </div>
+        </section>
+        <section id="neptune">         <!--section for the neptune img and text-->
+            <img src="planet.png" alt="neptune img" width="100%"  >
+            <p>Neptune 2023 <br> <br> <span>SPACE EXPRESS TRAVEL</span> offerss Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at lobortis ex, at venenatis odio. Mauris sit amet lorem at mi sollicitudin facilisis. Nam nisl diam, mattis efficitur nunc eu, tincidunt vestibulum ipsum. Aliquam hendrerit, est et pellentesque gravida, tortor libero bibendum dui, nec egestas nibh leo sit amet justo. Morbi gravida aliquet placerat. Pellentesque arcu justo, finibus ac nibh eu, semper viverra augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras urna ante, sodales semper placerat et, sagittis a nunc. Proin et consequat velit, quis pulvinar odio. Integer elit lectus, congue vitae suscipit quis, consectetur eu turpis. Etiam velit justo, posuere auctor tempor in, luctus vel orci. Curabitur mauris lectus, dignissim non lectus ut, volutpat tincidunt mi. Maecenas rhoncus tincidunt iaculis. Donec elementum diam felis, vitae scelerisque ex volutpat ut.
+            </p>
+        </section>
+    </section>

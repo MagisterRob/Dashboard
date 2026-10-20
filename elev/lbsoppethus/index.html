@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBS Lund | Öppet hus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@900&family=IBM+Plex+Mono:wght@500&family=Onest:wght@400;500;700&display=swap"    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#start" class="logo">
+            <img src="./header-logo.png" alt="">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#program">PROGRAM</a>
+            <a href="#hitta">HITTA RÄTT</a>
+            <a href="#projekt">ELEVARBETEN</a>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="Öppna meny">
+            [=]
+        </button>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="#program">
+            <span>PROGRAM</span>
+            <span>[01]</span>
+        </a>
+
+        <a href="#hitta">
+            <span>HITTA RÄTT</span>
+            <span>[02]</span>
+        </a>
+
+        <a href="#projekt">
+            <span>ELEVARBETEN</span>
+            <span>[03]</span>
+        </a>
+    </div>
+
+    <main>
+        <section class="hero" id="start">
+            <div class="hero-content reveal">
+                <span class="eyebrow">[ LBS KREATIVA GYMNASIET / LUND ]</span>
+
+                <h1 class="hero-title">
+                    <span>DE BÄSTA IDÉERNA</span>
+                    <span>HAR INGEN KOMMIT</span>
+                    <span>PÅ ÄN</span>
+                </h1>
+
+                <div class="hero-question">
+                    <strong>KANSKE DU?</strong>
+                    <span>↘</span>
+                </div>
+
+                <p class="hero-copy">
+                    Välkommen till LBS Kreativa Gymnasiet Lund.
+                    Här möts kreativitet, teknik och digitalt skapande.
+                    Utforska våra program och upptäck vad du kan skapa.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#program" class="button">
+                        <span>VÅRA PROGRAM</span>
+                        <span>[↓]</span>
+                    </a>
+
+                    <a href="#projekt" class="button button-outline">
+                        <span>ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-art reveal">
+                <div class="hero-pixel-main">
+                    <span class="pixel-label">[ SKAPA ]</span>
+
+                    <strong class="pixel-title">
+                        <span>IDÉ</span>
+                        <span>↓</span>
+                        <span>VERKLIGHET</span>
+                    </strong>
+
+                    <span class="pixel-footer">[ LBS / LUND ]</span>
+                </div>
+
+                <div class="pixel pixel-one"></div>
+                <div class="pixel pixel-two"></div>
+                <div class="pixel pixel-three"></div>
+            </div>
+
+            <a href="#program" class="scroll-label">
+                SCROLL [↓]
+            </a>
+        </section>
+
+        <section class="program" id="program">
+            <div class="section-heading reveal">
+                <span class="section-number">[01]</span>
+
+                <div>
+                    <span class="section-kicker">VÅRA PROGRAM</span>
+
+                    <h2 class="section-title">
+                        <span>VAD VILL DU</span>
+                        <span>SKAPA?</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="program-grid">
+                <article class="program-card reveal" data-filter="ai">
+                  <span class="card-label">[01 / TEKNIK]</span>
+                  <img class="program-img" src="https://lbs.se/wp-content/uploads/sites/17/2023/06/lbsbilderwebbmodellavtal-till-juni-2030kortspelgrafik-1-400x300.jpg" alt="">
+
+                    <div class="program-card-body">
+                        <h3>AI & WEBBUTVECKLING</h3>
+
+                        <p>
+                            Programmering, artificiell intelligens,
+                            webb och digital utveckling.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        <span>SE ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </button>
+                </article>
+
+                <article class="program-card reveal" data-filter="film">
+                  <span class="card-label">[02 / ESTET]</span>
+                  <img class="program-img" src="https://lbs.se/wp-content/uploads/sites/17/2023/06/lbsbilderwebbmodellavtal-till-juni-2030kortspelgrafik-1-400x300.jpg" alt="">
+
+                    <div class="program-card-body">
+                        <h3>FOTO & FILM</h3>
+
+                        <p>
+                            Foto, film, redigering och
+                            visuellt berättande.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        <span>SE ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </button>
+                </article>
+
+                <article class="program-card reveal" data-filter="design">
+                  <span class="card-label">[03 / ESTET]</span>
+                  <img class="program-img" src="https://lbs.se/wp-content/uploads/sites/17/2023/06/lbsbilderwebbmodellavtal-till-juni-2030kortspelgrafik-1-400x300.jpg" alt="">
+                    <div class="program-card-body">
+                        <h3>GRAFISK DESIGN</h3>
+
+                        <p>
+                            Design, illustration, typografi
+                            och visuell identitet.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        <span>SE ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </button>
+                </article>
+
+                <article class="program-card reveal" data-filter="music">
+                    <span class="card-label">[04 / ESTET]</span>
+                    <img class="program-img" src="https://lbs.se/wp-content/uploads/sites/17/2023/06/lbsbilderwebbmodellavtal-till-juni-2030kortspelgrafik-1-400x300.jpg" alt="">
+                    <div class="program-card-body">
+                        <h3>MUSIKPRODUKTION</h3>
+
+                        <p>
+                            Musikskapande, inspelning
+                            och ljudproduktion.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        <span>SE ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </button>
+                </article>
+
+                <article class="program-card reveal" data-filter="gameart">
+                    <span class="card-label">[05 / ESTET]</span>
+                    <img class="program-img" src="https://lbs.se/wp-content/uploads/sites/17/2023/06/lbsbilderwebbmodellavtal-till-juni-2030kortspelgrafik-1-400x300.jpg" alt="">
+
+                    <div class="program-card-body">
+                        <h3>SPELGRAFIK</h3>
+
+                        <p>
+                            Karaktärer, miljöer,
+                            koncept och 3D.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        <span>SE ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </button>
+                </article>
+
+                <article class="program-card reveal" data-filter="gamedev">
+                    <span class="card-label">[06 / TEKNIK]</span>
+                    <img class="program-img" src="https://lbs.se/wp-content/uploads/sites/17/2023/06/lbsbilderwebbmodellavtal-till-juni-2030kortspelutveckling-1-400x300.jpg" alt="">
+                    <div class="program-card-body">
+                      <h3>SPELUTVECKLING</h3>
+
+                        <p>
+                            Programmering, game design
+                            och utveckling av egna spel.
+                        </p>
+                    </div>
+
+                    <button type="button">
+                        <span>SE ELEVARBETEN</span>
+                        <span>[→]</span>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <a href="#projekt" class="banner">
+            <span>ELEVARBETEN</span>
+            <span>[↓]</span>
+        </a>
+
+        <section class="find" id="hitta">
+            <div class="section-heading reveal">
+                <span class="section-number cyan">[02]</span>
+
+                <div>
+                    <span class="section-kicker cyan">HITTA RÄTT</span>
+
+                    <h2 class="section-title light">
+                        <span style="margin-bottom: 2vh;">VAR SKA</span>
+                        <span>JAG GÅ?</span>
+                    </h2> 
+                </div>
+            </div>
+
+            <div class="find-grid">
+                <div class="school-map reveal">
+                    <span class="map-label">[ LBS LUND / KARTA ]</span>
+                    <img src="https://cdn.discordapp.com/attachments/1550472757282734111/1558073143795646504/Screenshot_2026-10-09_at_12.59.56.png?ex=6aca1c31&is=6ac8cab1&hm=2bdaab209a92ada590122c04be73e63ce1b284c37ec0618e5fcf8f58424d0738&" alt="">
+                </div>
+
+                <div class="find-info reveal">
+                    <button
+                        class="find-item active"
+                        type="button"
+                        data-room="entrance"
+                    >
+                        <span>01</span>
+
+                        <div>
+                            <h3>ENTRÉ</h3>
+                            <p>Information och startpunkt.</p>
+                        </div>
+
+                        <strong>[→]</strong>
+                    </button>
+
+                    <button
+                        class="find-item"
+                        type="button"
+                        data-room="tech"
+                    >
+                        <span>02</span>
+
+                        <div>
+                            <h3>TEKNIK</h3>
+                            <p>AI, webb och spelutveckling.</p>
+                        </div>
+
+                        <strong>[→]</strong>
+                    </button>
+
+                    <button
+                        class="find-item"
+                        type="button"
+                        data-room="estet"
+                    >
+                        <span>03</span>
+
+                        <div>
+                            <h3>ESTET</h3>
+                            <p>Design, foto, film och musik.</p>
+                        </div>
+
+                        <strong>[→]</strong>
+                    </button>
+
+                    <div class="room-description">
+                        <span>[ VALT OMRÅDE ]</span>
+
+                        <p id="roomText">
+                            Börja här. Vi hjälper dig att hitta rätt under öppet hus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projekt">
+            <div class="projects-heading reveal">
+                <div>
+                    <span class="eyebrow dark">[03 / ELEVARBETEN]</span>
+
+                    <h2 class="projects-title">
+                        <span>SKAPAT</span>
+                        <span style="margin-top: 5vh;">PÅ LBS</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Utforska projekt inom våra kreativa utbildningar.
+                    Välj ett område eller öppna ett elevarbete för att läsa mer.
+                </p>
+            </div>
+
+            <div class="filters reveal">
+                <button class="active" type="button" data-filter="all">
+                    ALLA
+                </button>
+
+                <button type="button" data-filter="ai">
+                    AI / WEBB
+                </button>
+
+                <button type="button" data-filter="film">
+                    FOTO / FILM
+                </button>
+
+                <button type="button" data-filter="design">
+                    DESIGN
+                </button>
+
+                <button type="button" data-filter="music">
+                    MUSIK
+                </button>
+
+                <button type="button" data-filter="gameart">
+                    SPELGRAFIK
+                </button>
+
+                <button type="button" data-filter="gamedev">
+                    SPELUTVECKLING
+                </button>
+            </div>
+
+            <div class="project-grid">
+                <article
+                    class="project-card reveal"
+                    data-category="ai"
+                    data-title="NEURAL SPACE"
+                    data-type="AI & webbutveckling"
+                    data-description="En interaktiv webbupplevelse där kod, rörelse och AI möts."
+                    data-tech="HTML / CSS / JavaScript / AI"
+                >
+                    <div class="project-art project-ai">
+                        <span>[ CODE_01 ]</span>
+
+                        <strong>
+                            <span>NEURAL</span>
+                            <span style="margin-top: 2vh;">SPACE</span>
+                        </strong>
+                    </div>
+
+                    <div class="project-info">
+                        <span>[01 / AI & WEBB]</span>
+
+                        <h3>NEURAL SPACE</h3>
+
+                        <button type="button">ÖPPNA [↗]</button>
+                    </div>
+                </article>
+
+                <article
+                    class="project-card reveal"
+                    data-category="film"
+                    data-title="18:42"
+                    data-type="Foto & film"
+                    data-description="En kortfilm med fokus på ljus, komposition och visuellt berättande."
+                    data-tech="Kamera / Premiere Pro / Color grading"
+                >
+                    <div class="project-art project-film">
+                        <span>[ ● REC ]</span>
+
+                        <strong>
+                            <span>18</span>
+                            <span style="margin-top: 3vh;">42</span>
+                        </strong>
+                    </div>
+
+                    <div class="project-info">
+                        <span>[02 / FOTO & FILM]</span>
+
+                        <h3>18:42</h3>
+
+                        <button type="button">ÖPPNA [↗]</button>
+                    </div>
+                </article>
+
+                <article
+                    class="project-card reveal"
+                    data-category="design"
+                    data-title="FORM 01"
+                    data-type="Grafisk design"
+                    data-description="Ett visuellt identitetssystem byggt kring typografi och modulära former."
+                    data-tech="Figma / Illustrator / Typografi"
+                >
+                    <div class="project-art project-design">
+                        <span>[ GRID_01 ]</span>
+
+                        <strong>
+                            <span>FORM</span>
+                            <span style="margin-top: 3vh;">01</span>
+                        </strong>
+
+                        <div class="design-square"></div>
+                    </div>
+
+                    <div class="project-info">
+                        <span>[03 / GRAFISK DESIGN]</span>
+
+                        <h3>FORM 01</h3>
+
+                        <button type="button">ÖPPNA [↗]</button>
+                    </div>
+                </article>
+
+                <article
+                    class="project-card reveal"
+                    data-category="music"
+                    data-title="SIGNAL"
+                    data-type="Musikproduktion"
+                    data-description="En elektronisk produktion skapad med sampling, syntar och egen ljuddesign."
+                    data-tech="Ableton Live / Synth / Mix"
+                >
+                    <div class="project-art project-music">
+                        <div class="wave">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                        <strong>SIGNAL</strong>
+                    </div>
+
+                    <div class="project-info">
+                        <span>[04 / MUSIK]</span>
+
+                        <h3>SIGNAL</h3>
+
+                        <button type="button">ÖPPNA [↗]</button>
+                    </div>
+                </article>
+
+                <article
+                    class="project-card reveal"
+                    data-category="gameart"
+                    data-title="VOID"
+                    data-type="Spelgrafik"
+                    data-description="Karaktärs- och miljödesign för ett eget science fiction-koncept."
+                    data-tech="Blender / Photoshop / 3D"
+                >
+                  <img src="" alt="">
+                    <div class="project-art project-gameart">
+                        <span>[ PLAYER_01 ]</span>
+
+                        <strong>VOID</strong>
+
+                        <div class="character"></div>
+                    </div>
+
+                    <div class="project-info">
+                        <span>[05 / SPELGRAFIK]</span>
+
+                        <h3>VOID</h3>
+
+                        <button type="button">ÖPPNA [↗]</button>
+                    </div>
+                </article>
+
+                <article
+                    class="project-card reveal"
+                    data-category="gamedev"
+                    data-title="LOST PACKET"
+                    data-type="Spelutveckling"
+                    data-description="Ett programmerat 2D-spel med nivåer, rörelse och egna mekaniker."
+                    data-tech="Unity / C# / Game design"
+                >
+                    <div class="project-art project-game">
+                        <span>SCORE 0842</span>
+
+                        <strong>
+                            <span>LOST</span>
+                            <span style="margin-top: 3vh;">PACKET</span>
+                        </strong>
+                    </div>
+
+                    <div class="project-info">
+                        <span>[06 / SPELUTVECKLING]</span>
+
+                        <h3>LOST PACKET</h3>
+
+                        <button type="button">ÖPPNA [↗]</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="final-section">
+            <span class="eyebrow dark" style="position: relative; top: -5vh;">[ LBS KREATIVA GYMNASIET ]</span>
+
+            <h2 class="final-title">
+                <span style="margin-bottom: 3vh;">NÄSTA IDÉ</span>
+                <span>KAN VARA DIN</span>
+            </h2>
+
+            <a href="#program" class="final-link">
+                <span>UTFORSKA PROGRAMMEN</span>
+                <span>[→]</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+          <div class="footer-brand">
+              <img class="footer-logo" src="./header-logo.png" alt="LBS Kreativa Gymnasiet">
+  
+              <p>
+                  Kreativitet, teknik och digitalt skapande
+                  mitt i centrala Lund.
+              </p>
+          </div>
+  
+          <div class="footer-column">
+              <span class="footer-label">[ KONTAKT ]</span>
+  
+              <a href="tel:046124450">046-12 44 50</a>
+              <a href="mailto:lund@lbs.se">lund@lbs.se</a>
+          </div>
+  
+          <div class="footer-column">
+              <span class="footer-label">[ BESÖK OSS ]</span>
+  
+              <p>
+                  Bredgatan 10<br>
+                  222 21 Lund
+              </p>
+          </div>
+  
+          <div class="footer-column">
+              <span class="footer-label">[ SNABBLÄNKAR ]</span>
+  
+              <a href="#program">Program [→]</a>
+              <a href="#hitta">Hitta rätt [→]</a>
+              <a href="#projekt">Elevarbeten [→]</a>
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <span>LBS KREATIVA GYMNASIET / LUND</span>
+  
+          <span class="footer-line"></span>
+  
+          <a href="#start">TILL TOPPEN [↑]</a>
+      </div>
+  </footer> 
+
+    <div class="project-modal">
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+            <button class="modal-close" type="button">
+                [×]
+            </button>
+
+            <span id="modalType">[ ELEVARBETE ]</span>
+
+            <h2 id="modalTitle">NEURAL SPACE</h2>
+
+            <p id="modalDescription"></p>
+
+            <div class="modal-tech">
+                <span>[ VERKTYG / TEKNIK ]</span>
+                <strong id="modalTech"></strong>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

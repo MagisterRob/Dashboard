@@ -1,0 +1,715 @@
+
+
+.onest {
+  font-family: "Onest", Verdana;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.big-shoulders-huvudrubrik {
+  font-family: "Big Shoulders", Impact;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
+}
+
+.ibm-plex-mono-medium-kompletering {
+  font-family: "IBM Plex Mono", 'Courier New';
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Big Shoulders", Impact;
+    cursor:default;
+}
+
+p{
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {    /*typ en kopia av LBS lunds header*/
+    position: sticky;
+    font-family:"onest",Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    max-height: 97px;
+    position: sticky;  
+    top: 0;             /*Chatgpt la till för att headern faktiskt skulle fastna*/
+    background-color: #111111;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
+    z-index: 2;
+}
+
+.headContainer {    /*container för att hålla rätt på allt i headern*/
+    display: flex;
+    align-items: center;
+    max-height: 97px;
+}
+
+.loggo{ /*LBS loggan */
+    max-height: 48px;
+}
+
+.logo img {
+    width: 180px;
+    max-height: 48px;
+    margin-right: 67px;
+}
+
+.navs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navs > a {
+    display: block;
+    margin-left: 45px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Mapbutton {        /*knapp som tar än till kartan*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #00FFFF;
+    height: 35px;
+    width: 100px;
+    margin-left: 50px;
+    border: #00FFFF;
+    border-width: 5px;
+    border-style: solid;
+
+
+}
+
+.Mapbutton:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+
+.Mapbutton a{ /*text färg*/
+    color: #00FFFF;
+    text-align: left ;
+    font-family:"onest",Verdana;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+#FirstBlock {       /*första av typ 3 eller 4 block*/
+    height: 570px;
+    background-image:       /*Chat gpt visa att de kunde ligga undervarandra för att inte täcka varandra*/
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), /*taget från w3schools*/
+    linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0)),
+    url('LBS_bakgrund.png');
+    background-repeat: no-repeat;                        
+    background-size: /*chat gpt fixade storleken av var och en bakrunds del*/
+    cover,
+    100% 50px,
+    cover;
+    background-position: /*chat gpt fixade positonen av var och en bakrunds del*/
+    center,
+    bottom,
+    center;
+    font-family: "Big Shoulders", Impact;
+    overflow: auto;
+
+}
+
+.open {
+    width: 300px;
+    height: 125px;
+    background-color: #00FFFF;
+    margin: 150px 0 0 100px;
+
+    padding-top: 5px;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.open h1{
+    margin: 0px;
+    font-size:100px;
+    color: #002736;
+}
+
+.house {
+    width: 250px;
+    height: 130px;
+    background-color: #002736;
+    padding-top: 0;
+    margin-left: 300px;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.house h1{
+    margin: 0;
+    font-size:100px;
+    color: #00FFFF;
+}
+
+
+#SecondBlock {
+    background-color: #330026;
+    background-image: linear-gradient(to bottom, #14000f, rgba(0, 0, 0, 0));
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+
+    background-position:
+        top;
+    margin: 0;
+    color: #FF0079;
+    height: 570px;
+
+}
+
+#SecondBlock h2 {
+    font-size: 80px;
+    font-family: "Big Shoulders", Impact;
+    margin: 0px 0px 0px 70px;
+    padding-top: 100px  ;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+p.underrubrik {
+    font-family:"onest",Verdana;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 30px 0 30px 70px;
+}
+
+.buttoncontainer {
+    display: flex;
+
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+
+.Programbtn{
+    width: fit-content;
+    background-color: #FF0079;
+    color: #330026;
+    text-decoration: none;
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 20px 0 70px;
+    padding: 20px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+
+.Programbtn:Hover {
+    transform: scale(1.1);
+
+
+}
+
+.mappointer {
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mappointer p {
+    color:#FF0079;
+    font-size: 20px;
+    text-align: left;
+}
+
+#ThirdBlock{
+    display: flex;
+    justify-content: left;
+    background-color: #111111;
+}
+
+#ThirdBlock h4{
+    font-size: 50px;
+    margin: 100px 20px 10px 70px;
+    color: #FFFFFF;
+}
+
+
+.img_map{
+    margin: 100px 10px; 
+}
+
+
+.findPrograms{
+    display: block;
+    text-align: center;
+    align-items: center;
+    color:#FFFFFF;
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 50px 0px 10px 0px;
+}
+
+#ThirdBlock .Mapbutton{
+    margin-left: 39%;
+}
+
+#FourthBlock{
+    display:block;
+    align-items: center;
+    text-align: center;
+}
+
+#FourthBlock h3{
+    font-size: 50px;
+}
+
+.program_bilder{
+    margin: 20px 0 20px 0;
+}
+
+
+
+
+
+footer {
+    background-color: #111111;
+    height:auto;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+footer img{
+    margin: 100px 0 20px 0;
+}
+
+.footer_contact {
+    color:#FFFFFF;
+    padding-bottom: 50px;
+}
+
+.footer_contact h5 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_contact p{
+font-family: "IBM Plex Mono", 'Courier New';
+}
+
+
+
+
+
+
+
+/* =========================    
+   karta.html styling 
+   ========================= */
+
+
+#House{
+    margin: 50px 0 0 5px;
+    display: flex;
+
+}
+.Floors p{
+    font-family: "Onest", Verdana;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Floors .floors {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #002736;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    font-family: "Onest", Verdana;
+}
+
+.Floors .floors.active {
+    background-color: #00FFFF;
+    color: #002736;
+}
+
+.mapContainer[hidden] {
+    display: none;
+}
+
+.Floors h5{
+    font-size: 17px;
+    margin: 0;
+}
+
+.mapContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.mapContainer img{
+    z-index: 0;
+    display: block;
+    min-width: 330;
+    min-height: 320;
+}
+
+
+#matsalentooltip, 
+#Repstudiotooltip,
+#B-salentooltip,
+#Musikstudiontooltip,
+#Filmstudiotooltip,
+#Fotostudiotooltip,
+#FotoFilmtooltip,
+#PoddRumtooltip,
+#AWAItooltip,
+#Spelgrafiktooltip,
+#A-8tooltip,
+#A-7tooltip,
+#A-6tooltip,
+#A-5tooltip,
+#A-4tooltip,
+#A-3tooltip,
+#Grafiskdesigntooltip
+{
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    background-color: #002736;
+    color: #00FFFF;
+    padding: 10px;
+    border: 2px solid #00FFFF;
+    font-family: "Onest", Verdana;
+    width: max-content;
+    max-width: 200px;
+    z-index: 10;
+}
+
+#matsalentooltip{
+    left: 34px;
+    top: 45px;
+}
+#Repstudiotooltip{
+    left: 38px;
+    top: 108px;
+
+}
+
+#B-salentooltip{
+    left: 230px;
+    top: 40px;
+    
+}
+
+#Musikstudiontooltip{
+    left: 292px;
+    top: 140px;
+}
+
+#Filmstudiotooltip{
+    left: 38px ;
+    top: 206px;
+}
+
+#Fotostudiotooltip{
+    left: 51px;
+    top: 206px;
+}
+
+#FotoFilmtooltip{
+    left: 84px;
+    top: 206px;
+}
+
+#PoddRumtooltip{
+    left: 110px;
+    top: 188px;
+}
+
+#AWAItooltip{
+    left: 55px;
+    top: 277px;
+}
+
+#Spelgrafiktooltip{
+    left: 77px;
+    top: 310px;
+}
+
+#A-8tooltip{
+    left: 35px;
+    top: 230px;
+}
+
+#A-7tooltip{
+    left: 35;
+    top: 55;
+}
+
+#A-6tooltip{
+    left:92px ;
+    top: 53px;
+}
+
+#A-5tooltip{
+    left:135px ;
+    top: 35px;
+}
+
+#A-4tooltip{
+    left:218px ;
+    top: 53px;
+}
+
+#A-3tooltip{
+    left: 285px;
+    top: 80px;
+}
+
+#Grafiskdesigntooltip{
+    left: 65px;
+    top: 330px;
+}
+
+
+
+#matsalentooltip::after,
+#Repstudiotooltip::after,
+#B-salentooltip::after,
+#Musikstudiontooltip::after,
+#Filmstudiotooltip::after,
+#Fotostudiotooltip::after,
+#FotoFilmtooltip::after,
+#PoddRumtooltip::after,
+#AWAItooltip::after,
+#Spelgrafiktooltip::after,
+#A-8tooltip::after,
+#A-7tooltip::after,
+#A-6tooltip::after,
+#A-5tooltip::after,
+#A-4tooltip::after,
+#A-3tooltip::after,
+#Grafiskdesigntooltip
+{        /*tagit från w3shools*/
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================            Hadde ont om tid/ orkade inte ändra storkelen för hand så chatgpt har gjort så att det ser bra ut på telefon
+   PHONE RESPONSIVENESS
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+    header {
+        padding: 12px 15px;
+        max-height: none;
+    }
+
+    .headContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        max-height: none;
+    }
+
+    .logo img {
+        width: 120px;
+        max-height: 40px;
+        margin-right: 0;
+    }
+
+    .navs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navs > a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .Mapbutton {
+        width: 75px;
+        height: 32px;
+        margin-left: 0;
+        border-width: 2px;
+        box-sizing: border-box;
+    }
+
+    .Mapbutton a {
+        font-size: 12px;
+        margin: 0;
+    }
+
+
+    /* FIRST BLOCK: ÖPPET HUS */
+    #FirstBlock {
+        min-height: 450px;
+        height: auto;
+        padding: 60px 15px;
+        box-sizing: border-box;
+        background-position: center, bottom, center;
+    }
+
+    .open {
+        width: min(260px, 85%);
+        height: 100px;
+        margin: 30px 0 0 0;
+        padding: 0;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+    }
+
+    .open h1 {
+        font-size: clamp(55px, 15vw, 75px);
+    }
+
+    .house {
+        width: min(220px, 75%);
+        height: 100px;
+        margin: 0 0 0 auto;
+        padding: 0;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+    }
+
+    .house h1 {
+        font-size: clamp(55px, 15vw, 75px);
+    }
+
+
+    /* SECOND BLOCK: WELCOME */
+    #SecondBlock {
+        height: auto;
+  
+        padding: 0 20px 40px;
+        box-sizing: border-box;
+    }
+
+    #SecondBlock h2 {
+        font-size: clamp(36px, 9vw, 52px);
+        margin: 0;
+        padding-top: 55px;
+        padding-bottom: 0;
+        overflow-wrap: break-word;
+    }
+
+    p.underrubrik {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 20px 0 25px;
+    }
+
+    .buttoncontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Programbtn {
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .mappointer {
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* THIRD BLOCK: MAP */
+    #ThirdBlock {
+        display: block;
+        text-align: center;
+
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #ThirdBlock h4 {
+        font-size: clamp(40px, 8vw, 42px);
+        margin: 30px 0 15px;
+    }
+
+    .img_map {
+        margin: 15px 0;
+        max-width: 100%;
+    }
+
+    .img_map img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ImgPil {
+        text-align: center;
+    }
+
+    .findPrograms {
+        font-size: clamp(25px, 7vw, 34px);
+        margin: 30px 0 10px;
+    }
+
+
+
+}
+
+

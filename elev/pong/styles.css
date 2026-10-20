@@ -1,0 +1,31 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#score {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+canvas {
+  background: #000;
+  border: 3px solid #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+#message {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #aaa;
+}

@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ta bort ksk-->
+    <title>Click Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!--fönster till header/clicktarget-->
+    <section id="welcome-window" class="window"><div class="border-wrap-1"><div class="border-wrap-2">
+        <div class="windowhead"><!--header till fönstret-->
+            <div class="window-head-title">
+                <p>Welcome</p>
+            </div>
+            <div class="window-head-buttons"><!--knapparna i hörnet av fönstret, gör inget egentligen-->
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">--</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">O</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">X</div></div></div>
+            </div>
+        </div>
+        
+        <!--content till fönstret-->
+        <div  id="welcome">
+            <h1>Welcome to Click Clicker</h1><!--typ headern till spelet-->
+            <div class="border-wrap-8"><div class="border-wrap-5"><div class="border-wrap-6">
+                <div id="click-target">Click</div><!--click target-->
+            </div></div></div>
+        </div>
+    </div></div></section>
+
+    <!--fönster till uppgraderingar-->
+    <section id="upgrades-window" class="window"><div class="border-wrap-1"><div class="border-wrap-2">
+        <div class="windowhead"><!--header till fönstret-->
+            <div class="window-head-title">
+                <p>Upgrades</p>
+            </div>
+            <div class="window-head-buttons"><!--knapparna i hörnet av fönstret, gör inget egentligen-->
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">--</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">O</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">X</div></div></div>
+            </div>
+        </div>
+
+        <!--content till fönstret, uppdelat i uppgraderingstyper-->
+        <div id="upgrades" class="window-content"><div class="border-wrap-3"><div class="border-wrap-4">
+            <div id="click-upgrades"><!--upgraderingar för click power-->
+                <div class="border-wrap-7"><div class="upgrade" id="clickPowerPlusUpgrade">
+                    <h3>+1 Click Power</h3>
+                    <p class="price"></p>
+                </div></div>
+                <div class="border-wrap-7"><div class="upgrade" id="clickPowerEfficiencyUpgrade">
+                    <h3>+20% Click Power Efficiency</h3>
+                    <p class="price"></p>
+                </div></div>
+            </div>
+            <div id="autoclicker-upgrades"><!--upgraderingar för autoclickers-->
+                <div class="border-wrap-7"><div class="upgrade" id="autoclicker">
+                    <h3>+1 Autoclicker</h3>
+                    <p class="price"></p>
+                </div></div>
+                <div class="border-wrap-7"><div class="upgrade" id="autoclickIntervalUpgrade">
+                    <h3>-10% Autoclick Interval</h3>
+                    <p class="price"></p>
+                </div></div>
+                <div class="border-wrap-7"><div class="upgrade" id="autoclickerInflationUpgrade">
+                    <h3>-10% Autoclicker Inflation</h3>
+                    <p class="price"></p>
+                </div></div>
+            </div>
+        </div></div></div>
+
+    </div></div></section>
+
+    <!--fönster till stats-->
+    <section id="stats-window" class="window"><div class="border-wrap-1"><div class="border-wrap-2">
+        <div class="windowhead"><!--header till fönstret-->
+            <div class="window-head-title">
+                <p>Statistics</p>
+            </div>
+            <div class="window-head-buttons"><!--knapparna i hörnet av fönstret, gör inget egentligen-->
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">--</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">O</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">X</div></div></div>
+            </div>
+        </div>
+
+        <!--content till fönstret-->
+        <div id="stats" class="window-content"><div class="border-wrap-3"><div class="border-wrap-4">
+            <table>
+                <tr id="score"><td>Clicks:</td><td></td></tr>
+                <tr id="clicks-per-second"><td>Per Second:</td><td></td></tr>
+                <tr id="points-per-click"><td>Click Power:</td><td></td></tr>
+                <tr id="autoclickers"><td>Autoclickers:</td><td></td></tr>
+                <tr id="autoclicks-per-second"><td>Autoclick Speed:</td><td></td></tr>
+            </table>
+        </div></div></div>
+    </div></div></section>
+
+    <!--fönster till popups (motsvarar golden cookies)-->
+    <section id="popup-window" class="window"><div class="border-wrap-1"><div class="border-wrap-2">
+        <div class="windowhead"><!--header till fönstret-->
+            <div class="window-head-title">
+                <p>Bonus</p>
+            </div>
+            <div class="window-head-buttons"><!--knapparna i hörnet av fönstret, gör inget egentligen-->
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">--</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">O</div></div></div>
+                <div class="border-wrap-5"><div class="border-wrap-6"><div class="window-head-button">X</div></div></div>
+            </div>
+        </div>
+        
+        <!--content till fönstret-->
+        <div id="popup">
+            <p id="popup-info">You have been gifted </p><!--info om popuppen man fick-->
+            <div class="border-wrap-8"><div class="border-wrap-5"><div class="border-wrap-6">
+                <div id="popup-claim">Claim Reward</div><!--knapp för att popuppens effekt-->
+            </div></div></div>
+        </div>
+    </div></div></section>
+    
+</body>
+<footer><!--footer med reset/save knappar-->
+    <div id="test"></div>
+    <div id="flexdiv">
+        <div class="border-wrap-8"><div class="border-wrap-5"><div class="border-wrap-6">
+         <div id="save-button">Save Progress</div>
+      </div></div></div>
+       <div class="border-wrap-8"><div class="border-wrap-5"><div class="border-wrap-6">
+           <div id="reset-button">Reset Progress</div>
+       </div></div></div>
+    </div>
+</footer>
+</html>

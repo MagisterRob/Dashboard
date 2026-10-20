@@ -1,0 +1,420 @@
+
+/*-------------------- css for the both pages -----------------------------------------------------------------------------------------------------------------------------*/
+body{
+    font-family: "Noto Sans", sans-serif, "copperplate";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noto-sans-regular {            /*font style from google fonts*/
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+
+#nav_search {                       /*bakground and display for evenrithing in the top bar inculding logo, navs and search*/
+    background-color: #111d28;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Noto Sans", sans-serif;
+}
+.navBar {               /*the nav bars placment relative to the other parts*/
+    text-align: right;
+    overflow: hidden;
+    font-size: 16px;
+    position: relative;
+    margin-left: auto;
+    padding-right: 5%;
+}
+
+.navBar ul {        /*genarl list style and spacing for the nav bar*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navBar ul li {     /*the navs placment to each other */
+    float: left;
+}
+
+.navBar ul li a {       /*how the words look in the navigation bar*/
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 18px 24px;
+    text-decoration: none;
+}
+
+ul li a:hover {         /*hover for all lists*/
+    color: #e8b26e;
+    cursor: pointer;
+}
+
+.loggo {
+    padding: 10px 20px;
+    position: relative;
+    
+}
+
+.searchBar {         /*container for the Searchbar mostly making it sit corectly compeard too logo and nav bar*/
+    width: 70%;
+    height: 30px;
+    text-align: right;
+    margin-top: -4%;
+    margin-left: auto;
+    padding-right: 1%;
+    display: flex;
+}
+
+.searchBar img {            /*img placing for magnifying glass*/
+    margin-right: -25px;
+    z-index: 1;             /*found that i could layer it over in a yt video*/
+}
+
+.searchBar input[type=text] { /* searchbar styling and placing*/
+    padding: 6px;
+    border: none;
+    margin-right: 100px;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 25px;
+
+}
+input::placeholder{     /*the text thats says search in the search bar is only here to make the padding-left in searchbar to move the text and noit the bar */
+    padding-left: 5px; /*this dose absolutly noting exept to not get a warning mesege*/
+}
+
+/*---------------------------Space Express css -----------------------------------------------------------------------------------------------------------------------------*/
+
+#home_page {            /*layout for the home page*/
+    display: flex;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    width:99%;
+
+}
+
+#triple {       /* width so that they lay corectly compeard to the austronaut*/     
+    width:70%;
+    margin: 0;
+    padding: 0;
+}
+
+#double {           /* display flex so that the ig lay besides each other*/
+    display: flex;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.jupiter {          /* styling and text placment for jupiter */
+    margin: 0;
+    padding-top: 1.5rem;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    display: flex;
+    text-align: justify;
+    background-color: #e8b26e;
+    color: #f7f6f5;
+}
+
+.book_now {         /*button styling and size */
+    display: flex;
+    background-color: #c59151;
+    height: 4rem;
+    margin-top: 5rem ;
+    width: 20%;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5%;
+    margin-left: 10%;
+    
+}
+
+
+.book_now :hover {
+    color: #e8b26e;
+    cursor: pointer;
+}
+
+.jupiter h1 {       /*size and placing for the headline on jupiter*/
+    font-size: 50px;
+    padding-left: 5%;
+}
+
+.prompts{           /*size and placement for the bakground and img of promts */
+    padding-right: 10px;
+    width: 38%;
+    display: flex;
+}
+
+.prompts ul {   /* list styling for prompts*/
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.prompts ul li a {      /*text styling for the list prompts*/
+    display: block;
+    color: rgb(0, 0, 0);
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+.Img2024 {      /*size and placing for img2024 */
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.astronautImg {   /*size and placing for astronautImg*/
+    width: 30%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*  ----------------------------------- destination css -------------------------------------------------------------------------------------------------------------*/
+
+#destination_page {     /* placment and display for destination page */
+    padding-top: 30px;
+    display: flex;
+}
+
+#travel {           /* place size and color for the bakground of travel inputs*/
+    height: 100%;
+    width: 60%;
+    padding-bottom: 2rem;
+    background-color: #ede0cb;
+    
+}
+#neptune {      /* width for neptune and the small devider betwene neptune and travel*/
+    width: 40%;
+    padding-left: 2%;
+    
+}
+.inputs {       /* placement for the inputs*/
+    padding-left: 3rem;
+    padding-bottom: 4%;
+}
+.inputs input {    /* style and spacing in betwen the inputs*/
+    height: 3rem;
+    width: 90%;
+    padding-left: 5px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 16px;
+}
+
+
+#neptune p {      /* color and placment for the paragraf under neptune*/
+    margin-top: 0;
+    color:#575756;
+}
+
+#neptune p span {       /* difrent style of text for the first part of paragraf*/
+    font-weight: 900;
+}
+
+
+/*------------------------------- size for tablet----------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 930px) {
+    .navBar {               /*the nav bars placment relative to the other parts*/
+
+        font-size: 14px;
+        position: relative;
+        margin-left: auto;
+        padding-right: 5%;
+    }
+
+
+
+
+
+    .navBar ul li a {       
+        padding: 10px 20px;
+
+    }
+
+
+  
+
+    .searchBar {         /*container for the Searchbar mostly making it sit corectly compeard too logo and nav bar*/
+        width: 60%;
+        height: 30px;
+        text-align: right;
+        margin-top: -8%;
+        margin-left: auto;
+        padding-right: 1%;
+        display: flex;
+    }
+
+
+    .searchBar input[type=text] { /* searchbar styling and placing*/
+        padding: 6px;
+        border: none;
+        margin-right: 100px;
+        font-size: 17px;
+        border-radius: 20px;
+        width: 100%;
+        padding-left: 25px;
+
+    }
+    input::placeholder{     /*the text thats says search in the search bar is only here to make the padding-left in searchbar to move the text and noit the bar */
+        padding-left: 5px; /*this dose absolutly noting exept to not get a warning mesege*/
+    }
+    /*---------------------------Space Express css -------------------------------------*/
+
+    #home_page {            /*layout for the home page*/
+        display: flex;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+        width:99%;
+
+    }
+
+    #triple {       /* width so that they lay corectly compeard to the austronaut*/     
+        width:70%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #double {           /* display flex so that the ig lay besides each other*/
+        display: flex;
+        width:100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .jupiter {          /* styling and text placment for jupiter */
+        margin: 0;
+        padding-top: 1.5rem;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        display: flex;
+        text-align: justify;
+        background-color: #e8b26e;
+        color: #f7f6f5;
+    }
+
+    .book_now {         /*button styling and size */
+        display: flex;
+        background-color: #c59151;
+        height: 3.5rem;
+        margin-top: 2rem ;
+        width: 27%;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 18px;
+        padding-left: 1%;
+        margin-left: 10%;
+        
+    }
+
+
+    .book_now :hover {
+        color: #e8b26e;
+        cursor: pointer;
+    }
+
+    .jupiter h1 {       /*size and placing for the headline on jupiter*/
+        font-size: 30px;
+        padding-left: 0%;
+    }
+
+    .prompts{           /*size and placement for the bakground and img of promts */
+        padding-right: 5px;
+        width: 40%;
+        display: flex;
+    }
+
+    .prompts ul {   /* list styling for prompts*/
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .prompts ul li a {      /*text styling for the list prompts*/
+        display: block;
+        color: rgb(0, 0, 0);
+        padding-bottom: 20px;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .prompts img {
+        height: 90%;
+    }
+
+    .Img2024 {      /*size and placing for img2024 */
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Img2024 img{
+        height: 90%;
+    }
+
+
+    .astronautImg {   /*size and placing for astronautImg*/
+        width: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .astronautImg img {
+        height: 94%;
+    }
+}
+/*------------------------------- size for phone----------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 700px) {
+    .navBar {               /*the nav bars placment relative to the other parts*/
+        font-size: 12px;
+
+    }
+
+
+    .navBar ul li a {       /*how the words look in the navigation bar*/
+        padding: 15px 5px;
+
+    }
+
+    .loggo {
+        padding: 0px 0px;
+        position: relative;
+    
+    }
+    .loggo img {
+        width: 90%;
+        height: 60px;
+    }
+    
+    .jupiter h1 {       /*size and placing for the headline on jupiter*/
+        font-size: 15px;
+    }
+        .book_now {         /*button styling and size */
+
+        height: 2rem;
+        margin-top: 1rem ;
+        width: 40%;
+
+        font-size: 14px;
+        padding-left: 1%;
+       
+        
+    }
+}

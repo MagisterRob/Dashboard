@@ -1,0 +1,193 @@
+<!--
+
+Updates:
+- Fixed main background image not taking up 100% of width of screen
+- Fixed categories text links not being black color by default
+- More comments
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- Here we set up some technical parameters for our website and connect CSS (and JavaScr if we'd wave one) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" context="width=device-width, initial-scale=1.0">
+    <title>Bambini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Honestly, I don't even know why do we need wrapper. -->
+<div id="wrapper">
+    
+    <div id="top"> <!-- Toppest black line with links, sing in and shopping cart -->
+
+        <div id="top_links"> <!-- Left side (links) -->
+            <a href="#">WHAT'S NEW</a>
+            <span class="divider">|</span>
+            <a href="#">DESIGNER</a>
+            <span class="divider">|</span>
+            <a href="#">CLOTHING</a>
+            <span class="divider">|</span>
+            <a href="#">SHOES</a>
+            <span class="divider">|</span>
+            <a href="#">BAGS</a>
+            <span class="divider">|</span>
+            <a href="#">ACCESSORIES</a>
+        </div>
+
+        <div id="top_info"> <!-- Right side (login and cart) -->
+            <img src="Assets/sing_in.jpg" style="vertical-align: top;">
+            <a href="#">SING IN</a>
+            
+            <span style="padding-left: 40px;"></span>
+
+            <img src="Assets/shopping_bad.jpg" style="vertical-align: top;">
+            <a href="#">SHOPPING BAG - 0 ITEMS</a>
+        </div>
+
+    </div>
+
+    <div id="header"> <!-- Vårt header som är splittrad i 3 delar för att kunna flytta på de -->
+
+        <div id="header_left"> <!-- Vänster -->
+            <a href="#">NEW ARRIVALS</a>
+            <span class="divider">|</span>
+            <a href="#">FOR BOYS</a>
+            <span class="divider">|</span>
+            <a href="#">FOR GIRLS</a>
+        </div>
+
+        <div id="header_center"> <!-- Mitt -->
+            <a href="#">
+                <img src="Assets/logo.jpg" alt="Bambini logo">
+            </a>
+        </div>
+
+        <div id="header_right"> <!-- Höger -->
+            <a href="#">FOR BABIES</a>
+            <span class="divider">|</span>
+            <a href="#">DESIGNERS</a>
+            <span class="divider">|</span>
+            <a href="#">SALE</a>
+        </div>
+
+    </div>
+
+    <!-- Here is where background image object is created. Shop button inside of it -->
+    <div id="front_image">
+        <button id="shop_now_button">SHOP NOW</button>
+    </div>
+
+    <!-- Discovery section -->
+    <div id="categories">
+        <table>
+            <!-- Pictures on products -->
+            <tr>
+                <td>
+                    <a href="#"><img src="Assets/accessories.jpg" alt="Accessories"></a>
+                </td>
+                <td>
+                    <a href="#"><img src="Assets/coats.jpg" alt="Coats"></a>
+                </td>
+                <td>
+                    <a href="#"><img src="Assets/shirts.jpg" alt="Shirts"></a>
+                </td>
+            </tr>
+            <!-- Respective text links -->
+            <tr>
+                <td> <a href="#">DISCOVER ACCESSORIES</a> </td>
+                <td> <a href="#">DISCOVER COATS</a> </td>
+                <td> <a href="#">DISCOVER SHIRTS</a> </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Email subscription section -->
+    <div id="newsletter">
+        <div>
+            <h2>SUBSCRIBE TO OUR</h2>
+            <div class="newsletter_box"> <!-- A wrapper for input so that actual input is inside of a box and has borders-->
+                <input id="email_input" type="email" placeholder="ENTER YOUR EMAIL HERE">
+            </div>
+        </div>
+        <div>
+            <h1>NEWSLETTER</h1>
+            <button class="newsletter_box" id="subscribe_button">SUBSCRIBE</button>
+        </div>
+        <div id="newsletter_undermessage">
+            Sign up for the updates, style ideas & latest fashion news from your 
+            favourite designers at Bambini.
+        </div>
+    </div>
+    
+    <!-- Footer with all the boring contact info or whatever -->
+    <!-- 
+    AI has helped me to come up with a way how to create the styling, for example
+    that I should use div with flex instead of table that I wanted to use, and also
+    on how to create the funny line thing without any images or text, just CSS!
+    -->
+    <footer id="footer">
+
+        <!-- To separate them from other stuff, veri smart -->
+        <div id="footer_columns">
+            <div class="footer_column">
+                <h3>COMPANY</h3>
+                <div class="footer_line"> <span></span> </div>
+                <ul>
+                    <li><a href="#">What's new</a></li>
+                    <li><a href="#">Designer</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_column">
+                <h3>CATEGORIES</h3>
+                <div class="footer_line"> <span></span> </div>
+                <ul>
+                    <li><a href="#">New arrivals</a></li>
+                    <li><a href="#">Shop boy</a></li>
+                    <li><a href="#">Shop girl</a></li>
+                    <li><a href="#">Buy children</a></li>
+                    <li><a href="#">Designers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_column">
+                <h3>CONTACT US</h3>
+                <div class="footer_line"> <span></span> </div>
+                <ul>
+                    <li>Golden Quandale Dingle St. 7</li>
+                    <li>Ohio, 1st district</li>
+                    <li id="phone_number">+46-79-056 83 35</li>
+                    <li><a type="email">den.kos.work@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_column">
+                <h3>FOLLOW US ON</h3>
+                <div class="footer_line"> <span></span> </div>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="copyrights">Copyright Daniil Kosenko-Suprun © 2026 All rights reserved.</div>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>

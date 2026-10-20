@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LBS Öppet Hus </title>
+    <link rel="stylesheet" href="Style.css">
+    <!--Google fonts-->
+    <!--onest font for: ingress, underubrik och brödtext-->
+    <!--bigshoulders font for: headlines-->
+    <!--IBM Plex Mono medium-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,800&family=IBM+Plex+Mono:wght@500&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headContainer"> <!--huvud container -->
+            <div class="loggo">
+                <a href="index.html" class="logo"><img src="lbsLogo.png" alt="lbs logo with text"></a>
+            </div>
+            <div class="navs">
+                <a href="https://lbs.se/lund/"> Om LBS </a>
+                <a href="index.html#FourthBlock"> Program</a>
+                <a href="index.html">Hem</a>
+                <div class="Mapbutton">
+                    <a href="karta.html">Karta </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="House" >
+        <div class="Floors">
+            <h5> LBS inifrån </h5>
+            <p> våning:</p>
+            <button class="floors" data-floor="1"> 1 </button>  <!--Data-floor chat gpt lade till så att man kan byta mellan våningarna -->
+            <button class="floors" data-floor="2"> 2 </button>
+        </div>                     <!--chat gpt la till id floor1 för att defigera vilken våning man är på-->
+        <div class="mapContainer" id="floor1"> <!--ihopsättning av stack overflow som chatgpt har förklarat och jag sedan skrivit om så det passar min hemsida och karta-->
+            <img src="FirstFloorMap.png"  height="320px" width="330px" usemap="#FirstFloorMap" class="FirstFloorMap" alt="karta över våning 1">
+            <map name="FirstFloorMap" > <!--våning ett karta med olkia area cirklar på kartan och medföljand tool tips som förklarar varje rum på skolan-->
+            <area shape="circle" coords="32,43,40" alt="Matsalen" id="Matsalen">
+            <area shape="circle" coords="23,108,40" alt="Repstudio" id="Repstudio">
+            <area shape="circle" coords="246,40,40" alt="B-salen"  id="B-Salen">
+            <area shape="circle" coords="292,140,40" alt="Musikstudion"  id="Musikstudion">
+            <area shape="circle" coords="18,206,20" alt="Filmstudio"  id="Filmstudio">
+            <area shape="circle" coords="51,206,20" alt="Fotostudio"  id="Fotostudio">
+            <area shape="circle" coords="84,206,20" alt="FotoFilm"  id="FotoFilm">
+            <area shape="circle" coords="110,188,20" alt="PoddRum"  id="PoddRum">
+            <area shape="circle" coords="55,277,30" alt="AWAI"  id="AWAI">
+            <area shape="circle" coords="77,310,30" alt="Spelgrafik"  id="Spelgrafik">
+            </map>
+            <div id="Matsalentooltip"> 
+                <p> Matsalen: här äter alla elever lunch serverad av Marvin</p>
+            </div>
+            <div id="Repstudiotooltip">
+                <p> Repstudion: här övar musikarna </p>
+            </div>
+            <div id="B-salentooltip">
+                <p>B1 NO-salen: här har vi roliga laborationer i fysik, kemi och biologi</p>
+            </div>
+                 <div id="Musikstudiontooltip">
+                <p>  Musikstudion: Här är musik lektioner</p>
+            </div>
+            <div id="Filmstudiotooltip"> 
+                <p>Filmstudion: här filmas en massa roliga saker </p>
+            </div>
+            <div id="Fotostudiotooltip"> 
+                <p>Fotostudion: här fottas de finnaste bilderna </p>
+            </div>
+            <div id="FotoFilmtooltip"> 
+                <p> Foto-Film: i detta klasrumet lär man sig allt om fotgraftering och filmning</p>
+            </div>
+            <div id="PoddRumtooltip"> 
+                <p> Poddrummet: här spellas skolans egna podd in</p>
+            </div>
+            <div id="AWAItooltip"> 
+                <p> D1 AI - webbutvekling: i detta klassrum Lär man sig programera hemsidor och bemästra AI </p>
+            </div>
+            <div id="Spelgrafiktooltip"> 
+                <p> D2 Spelgrafik: här sitter spelgrafikerna och desingnar snygga och intresanta spel </p>
+            </div>
+        </div>
+        <div class="mapContainer" id="floor2" hidden> <!--chat gpt added hidden to hide this floor wile floor one is up-->  
+            <img src="SecondFloorMap.png" width="330" height="360" usemap="#SecondFloorMap" class="SecondFloorMap" alt="Karta över våning 2">
+            <map name="SecondFloorMap"> <!--karta över andra våninga a huste och d huset med are cirklar för alla klassrum med medföljande tooltips-->
+                <area shape="circle" coords="36,230,30" alt="A-8" id="A-8">
+                <area shape="circle" coords="35,55,20" alt="A-7" id="A-7">
+                <area shape="circle" coords="92,53,20" alt="A-6" id="A-6">
+                <area shape="circle" coords="135,35,20" alt="A-5" id="A-5">
+                <area shape="circle" coords="218,53,30" alt="A-4" id="A-4">
+                <area shape="circle" coords="285,80,30" alt="A-3" id="A-3">
+                <area shape="circle" coords="65,330,40" alt="Grafiskdesign" id="Grafiskdesign">
+            </map>
+            <div id="A-8tooltip"> 
+                <p>A8</p>
+            </div>
+            <div id="A-7tooltip">
+                <p>A7: här befinersig AWAI Under öpnahuset </p>
+            </div>
+            <div id="A-6tooltip">
+                <p> A6 </p>
+            </div>
+            <div id="A-5tooltip">
+                <p> A5: här är det filmvisning under Öppet hus </p>
+            </div>
+            <div id="A-4tooltip">
+                <p> A4 </p>
+            </div>
+            <div id="A-3tooltip">
+                <p> A3: här sitter Spelgrafik under öppet hus och visar vad de desingnar</p>
+            </div>
+            <div id="Grafiskdesigntooltip">
+                <p> D3 Grafiskdesign: här sitter de Grafiskadesignerna och ritar </p>
+            </div>
+        </div>
+    </section>
+    <script src="Script.js"></script>
+</body>
